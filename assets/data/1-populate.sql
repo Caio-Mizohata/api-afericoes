@@ -1,3 +1,3 @@
 USE application;
 
-INSERT INTO users(username, password) VALUES ('admin', 'root');
+INSERT INTO users(nome_de_usuario, senha) VALUES ('admin', 'root');
