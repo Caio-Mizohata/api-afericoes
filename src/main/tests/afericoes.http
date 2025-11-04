@@ -1,3 +1,40 @@
 @url = https://spooky-crypt-rj574v5p9wrc554v-8080.app.github.dev/afericoes
 
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBZmVyaWNvZXMgQVBJIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3NjIyOTI2MDB9.5MVMjvJre90EaxpVl5qqYkaIZ7xIKyF3_DpkH-kKEys
+
+###
 GET {{url}}
+Authorization: Bearer {{token}}
+
+###
+GET {{url}}/1
+Authorization: Bearer {{token}}
+
+###
+
+POST {{url}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id_sensor": 1,
+    "unidade": "Celsius",
+    "valor": "10.0"
+}
+
+###
+
+PUT {{url}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id_sensor": 1,
+    "unidade": "Celsius",
+    "valor": "15.0"
+}
+
+###
+
+DELETE {{url}}/1
+Authorization: Bearer {{token}}
