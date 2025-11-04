@@ -8,7 +8,6 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.AllArgsConstructor;
 import jakarta.persistence.GenerationType;
 
 
@@ -17,7 +16,6 @@ import jakarta.persistence.GenerationType;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 public class Afericao {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
