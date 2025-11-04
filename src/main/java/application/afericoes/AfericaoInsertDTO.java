@@ -1,5 +1,5 @@
 package application.afericoes;
 
-public record AfericaoInsertDTO(long id, String id_sensor, String unidade, String valor) {
+public record AfericaoInsertDTO(String id_sensor, String unidade, String valor) {
     
 }
